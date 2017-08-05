@@ -1,0 +1,222 @@
+@import './mixins.scss';
+
+html,body {
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft YaHei","Hiragino Sans GB",sans-serif;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+
+.View.container {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    @include clearfix;
+}
+
+.primary-color{
+    color: #22a875;
+}
+
+.Frame.top{
+    height: 49px;
+    overflow: hidden;
+    border-bottom: 1px solid #edecec;
+    background-color: #f6f5f5;
+    line-height: 49px;
+    font-size: 14px;
+    color: #666;
+    a{
+        color: #666;
+        &:hover{
+            opacity: .9;
+        }
+    }
+    .green{
+        color: #6eb92b;
+    }
+    .menus{
+        float: right;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            float: left;
+            margin-left: 15px;
+        }
+    }
+    .register{
+        display: inline-block;
+        width: 62px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        color: #fff;
+        background-color: #22a875;
+        border-radius: 3px;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+    .ico-phone{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/ico-top.png);
+        background-repeat: no-repeat;
+        background-position: -20px 0;
+        vertical-align: middle;
+    }
+    .ico-user{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/ico-top.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        vertical-align: middle;
+    }
+}
+
+.header{
+    height: 116px;
+    background-color: #fff;
+    @include clearfix;
+    .logo{
+        float: left;
+        margin: 25px 0 0 0;
+    }
+    .menus{
+        float: right;
+        margin: 50px 0 0 0;
+        padding: 0;
+        list-style: none;
+        color: #333;
+        a{
+            padding: 0 6px 12px 6px;
+            color: #333;
+            &.active,&:hover{
+                color: #04a1ec;
+                border-bottom: 1px solid #15a7ed;
+            }
+        }
+        li{
+            float: left;
+            margin-left: 30px;
+        }
+    }
+}
+
+.Frame.bottom{
+    @include clearfix;
+    padding: 36px 0 50px;
+    background-color: #202020;
+    .hd{
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        font-size: 15px;
+        color: #fff;
+        border-bottom: 1px dashed #3e3e3e;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            position: relative;
+            margin-top: 8px;
+            padding: 0 0 8px 30px;
+            border-bottom: 1px dashed #3e3e3e;
+            color: #7e7e7e;
+            font-size: 14px;
+            line-height: 20px;
+            a{
+                color: #7e7e7e;
+            }
+            .ico{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+    .ico{
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/ico-bottom.png);
+        background-repeat: no-repeat;
+        &.arrow{
+            background-position: -80px 0;
+            &:before{
+                position: absolute;
+                top: 50%;
+                left: 2px;
+                margin-top: -4px;
+                content: "";
+                display: block;
+                width: 5px;
+                height: 5px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #7e7e7e #7e7e7e transparent transparent;
+                transform: rotate(45deg);
+            }
+        }
+        &.telephone{
+            background-position: 0 0;
+        }
+        &.mail{
+            background-position: -20px 0;
+        }
+        &.phone{
+            background-position: -40px 0;
+        }
+        &.location{
+            background-position: -60px 0;
+        }
+    }
+    .menus{
+        float: left;
+        width: 180px;
+    }
+    .contact{
+        margin-left: 35px;
+        float: left;
+        width: 180px;
+    }
+    .map{
+        margin-left: 35px;
+        float: left;
+        width: 400px;
+        text-align: center;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    .follow{
+        margin-left: 35px;
+        padding-top: 25px;
+        float: left;
+        width: 100px;
+        text-align: center;
+        color: #fff;
+        .qrcode{
+            margin-top: 16px;
+        }
+    }
+}
+
+.copyright{
+    padding: 16px 0;
+    background-color: #121212;
+    font-size: 12px;
+    color: #7e7e7e;
+    a{
+        color: #005bac;
+    }
+}
