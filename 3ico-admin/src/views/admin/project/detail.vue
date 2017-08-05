@@ -36,7 +36,7 @@
                 <el-input v-model="data.digest" :rows="5" type="textarea"/>
                 </el-form-item>
                 <el-form-item label="简介" prop="intro">
-                    <editor :content="data.intro" @change="handleChange"/>
+                    <editor ref="editor" :content="data.intro" @change="handleChange"/>
                 </el-form-item>
                 <el-form-item>
                     <el-button style="margin-top: 20px;" type="primary" @click="save">保存摘要及简介</el-button>
