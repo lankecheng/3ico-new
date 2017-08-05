@@ -41,7 +41,7 @@
         display: inline-block;
         width: 20px;
         height: 20px;
-        background-image: url(../img/ico-top.png);
+        background-image: url(/fe/img/ico-top.png);
         background-repeat: no-repeat;
         background-position: -20px 0;
         vertical-align: middle;
@@ -124,7 +124,7 @@
         display: inline-block;
         width: 20px;
         height: 20px;
-        background-image: url(../img/ico-bottom.png);
+        background-image: url(/fe/img/ico-bottom.png);
         background-repeat: no-repeat;
         &.arrow{
             background-position: -80px 0;
@@ -638,7 +638,7 @@
     .about1{
         position: relative;
         height: 650px;
-        background: url(../fe/img/bg-about.jpg) no-repeat center;
+        background: url(/fe/img/bg-about.jpg) no-repeat center;
         .inner{
             position: absolute;
             left: 50%;
@@ -677,7 +677,7 @@
                     left: 0;
                     width: 87px;
                     height: 87px;
-                    background-image: url(../img/ico-about.png);
+                    background-image: url(/fe/img/ico-about.png);
                     background-repeat: no-repeat;
                     &.group{
                         background-position: 0 0;
@@ -710,7 +710,7 @@
             display: inline-block;
             width: 150px;
             height: 150px;
-            background-image: url(../fe/img/ico-about2.png);
+            background-image: url(/fe/img/ico-about2.png);
             background-repeat: no-repeat;
         }
         .ico-safe{
