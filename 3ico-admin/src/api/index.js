@@ -206,25 +206,25 @@ export default {
         return io.get('/api/user/coin_list', query);
     },
     getBanners() {
-        return io.get('/api/bg/home_pic_list');
+        return io.get('/api/project_admin/home_pic_list');
     },
     addBanner(body) {
-        return io.post('/api/bg/upload_home_pic', body);
+        return io.post('/api/project_admin/upload_home_pic', body);
     },
     delBanner(body) {
-        return io.post('/api/bg/del_home_pic', body);
+        return io.post('/api/project_admin/del_home_pic', body);
     },
     getAnncs() {
-        return io.get('/api/bg/annc_list');
+        return io.get('/api/project_admin/annc_list');
     },
     addAnnc(body) {
-        return io.post('/api/bg/create_annc', body);
+        return io.post('/api/project_admin/create_annc', body);
     },
     modifyAnnc(body) {
-        return io.post('/api/bg/modify_annc', body);
+        return io.post('/api/project_admin/modify_annc', body);
     },
     delAnnc(body) {
-        return io.post('/api/bg/del_annc', body);
+        return io.post('/api/project_admin/del_annc', body);
     },
     resetPwd(body) {
         return io.post('/api/auth/reset_pwd', body);
