@@ -1,0 +1,61 @@
+html,body {
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft YaHei","Hiragino Sans GB",sans-serif;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+.View.container {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    @include clearfix;
+}
+
+.primary-color{
+    color: #22a875;
+}
+
+.Module.top{
+    padding: 35px 0;
+    background-color: #373737;
+    .title{
+        font-size: 30px;
+        color: #fff;
+    }
+    .crumb{
+        margin-top: 10px;
+        font-size: 14px;
+        color: rgba(245, 245, 245, .6);
+    }
+}
+
+.ui-dialog {
+    padding: 20px;
+    *zoom:1;
+    _float: left;
+    position: relative;
+    background-color: #FFF;
+    border: 1px solid #999;
+    outline: 0;
+    background-clip: padding-box;
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform .15s ease-in-out, opacity .15s ease-in-out;
+    transition: transform .15s ease-in-out, opacity .15s ease-in-out;
+}
+.ui-popup-show .ui-dialog {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.ui-popup-focus .ui-dialog {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
