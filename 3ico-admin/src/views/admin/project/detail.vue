@@ -128,6 +128,14 @@ export default{
         },
     },
     mounted() {
+        const modImg = this.$refs['editor'].modules.filter((mod) => {
+            return mod.name === 'image';
+        })[0];
+
+        if (modImg) {
+            modImg.config.upload.headers.Authorization = localStorage.getItem('token');
+            modImg.config.upload.headers['Project-Id'] = this.$route.query.pid;
+        }
         this.getProjectIntro({
             pid: this.$route.query.pid
         }).then((res) => {
