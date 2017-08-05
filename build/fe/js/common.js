@@ -2,7 +2,7 @@
     if (localStorage.getItem('token')) {
         $.ajax({
             type: 'post',
-            url: 'http://119.23.160.90:8080/api/assist/verify',
+            url: '/api/assist/verify',/*http://119.23.160.90:8080*/
             data: {
             },
             headers: {
@@ -12,12 +12,12 @@
 
         }).fail(function (res) {
             localStorage.removeItem('token');
-            alert(res.responseJSON.error_msg);
+            //alert(res.responseJSON.error_msg);    
         });
     }
     $.ajax({
         type: 'post',
-        url: 'http://119.23.160.90:8080/api/assist/verify',
+        url: '/api/assist/verify',/*http://119.23.160.90:8080*/
         headers: {
             Authorization: localStorage.getItem('token'),
         }
@@ -30,7 +30,7 @@
     $(document).on('click', '#js-logout', function () {
         $.ajax({
             type: 'post',
-            url: 'http://119.23.160.90:8080/api/auth/logout',
+            url: '/api/auth/logout',//http://119.23.160.90:8080
             headers: {
                 Authorization: localStorage.getItem('token'),
             }
