@@ -35,12 +35,12 @@
                         </li>
                         <li v-if="NODE_ENV === 'development' || user.role === 1">
                             <router-link to="/admin/admin">项目管理员</router-link>
-                        </li><!-- 
-                        <li v-if="NODE_ENV === 'development' || user.role === 1">
+                        </li> 
+                        <li v-if="NODE_ENV === 'development' || user.role === 2">
                             <router-link to="/admin/banner">首页图片</router-link>
                         </li>
-                        <li v-if="NODE_ENV === 'development' || user.role === 1">
-                            <router-link to="/admin/annc">公告</router-link> -->
+                        <li v-if="NODE_ENV === 'development' || user.role === 2">
+                            <router-link to="/admin/annc">公告</router-link>
                         </li>
                         <li v-if="NODE_ENV === 'development' || user.role === 1">
                             <router-link to="/admin/admin-pay">万能充值</router-link>

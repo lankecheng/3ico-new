@@ -55,10 +55,6 @@
         <el-button @click="dialog.show = false">取消</el-button>
         </div>
     </el-dialog>
-    <div class="title">首页图片</div>
-    <banner></banner>
-    <div class="title">公告</div>
-    <annc></annc>
   </div>
 </template>
 
@@ -68,8 +64,6 @@ import {
     mapActions,
 } from 'vuex';
 
-import banner from './banner';
-import annc from './annc';
 
 export default{
     title: '项目管理员',
@@ -217,8 +211,6 @@ export default{
         this.initList();
     },
     components:{
-        banner,
-        annc
     }
 };
 </script>
