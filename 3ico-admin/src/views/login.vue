@@ -140,12 +140,7 @@ export default{
                             location.href = location.origin;
                         } else {
                             this.$message('登录成功');
-                            this.$router.push({
-                                path: '/admin'
-                            });
-                            setTimeout(() => {
-                                location.reload();
-                            }, 300);
+                            location.href = location.origin + '/manage/index.html#/admin';
                         }
                     }).catch(() => {
                         this.refreshCaptcha();
