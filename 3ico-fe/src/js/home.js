@@ -11,7 +11,7 @@
         nextButton: '#js-home-notice-next',
         autoplay: 4000,
     });
-    $(document).on('click', '.js-ico-tab', function (e) {
+    /*$(document).on('click', '.js-ico-tab', function (e) {
         var tab = $(this).data('val');
         var status = $(this).data('status');
         $('.js-ico-tab').find('a').removeClass('active');
@@ -19,5 +19,5 @@
         $('.js-ico-bd').hide();
         $('#js-' + tab).show();
         $('#js-ico-link').attr('href', '/manage/index.html#/projects?status='+status);
-    });
+    });*/
 })()
