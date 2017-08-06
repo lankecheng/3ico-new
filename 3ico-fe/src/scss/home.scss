@@ -492,6 +492,37 @@
                         }
                     }
                 }
+                .tabNoHover{
+                    margin: 0 5px;
+                    display: inline-block;
+                    color: #005bac;
+                    vertical-align: top;
+                    a{
+                        position: relative;
+                        display: block;
+                        padding: 7px 14px;
+                        border: 1px solid #005bac;
+                        color: #005bac;
+                        border-radius: 3px;
+                        &.active{
+                            background-color: #005bac;
+                            color: #fff;
+                            &:before{
+                                content: "";
+                                position: absolute;
+                                top: 100%;
+                                left: 50%;
+                                margin-left: -2.5px;
+                                display: block;
+                                width: 0;
+                                height: 0;
+                                border-width: 5px;
+                                border-style: solid;
+                                border-color: #005bac transparent transparent transparent;
+                            }
+                        }
+                    }
+                }
             }
             .line{
                 position: absolute;
@@ -500,6 +531,9 @@
                 width: 100%;
                 height: 1px;
                 background-color: #e7e7e7;
+            }
+            .secondLine{
+                top:19px;
             }
             .more{
                 position: absolute;
@@ -515,6 +549,12 @@
                 line-height: 18px;
                 color: #fff;
             }
+            .smore{
+                top:10px;
+            }
+        }
+        .shd{
+            margin-top:20px;
         }
         .bd{
             ul{

@@ -132,12 +132,11 @@
                 <span class="line"></span>
                 <div class="title">项目信息</div>
                 <div class="tabs">
-                    <div data-val="icoed" data-status="2" class="js-ico-tab tab"><a class="active" href="javascript:;">正在ICO</a></div>
-                    <div data-val="icoing" data-status="3" class="js-ico-tab tab"><a href="javascript:;">已结束ICO</a></div>
+                    <div data-val="icoed" data-status="2" class="js-ico-tab tabNoHover"><a class="active" href="javascript:;">结束ICO</a></div>
                 </div>
                 <a id="js-ico-link" class="more" href="/manage/index.html#/projects?status=2">更多</a>
             </div>
-            <div id="js-icoed" class="js-ico-bd bd" style="display: none;">
+            <div id="js-icoed" class="js-ico-bd bd" >
                 <ul>
                     <li>
                     <a href="javascript:;">
@@ -281,6 +280,13 @@
                     </li>
                 </ul>
             </div>
+            <div class="hd shd">
+                <span class="line secondLine"></span>
+                <div class="tabs">
+                    <div data-val="icoing" data-status="3" class="js-ico-tab tabNoHover"><a class='active' href="javascript:;">正在ICO</a></div>
+                </div>
+                <a id="js-ico-link" class="more smore" href="/manage/index.html#/projects?status=2">更多</a>
+            </div>
             <div id="js-icoing" class="js-ico-bd bd">
                 <ul>
                     <li>
@@ -370,7 +376,7 @@
                     <li>
                     <a href="javascript:;">
                         <div class="top" style="background-image: url(img/demo/banner.jpg)">
-                            <div class="tip">正在ICO</div>
+                            <div class="tip">结束ICO</div>
                             <div class="time">2017-5-22 18:00:00 - 2017-5-31 18:00:00</div>
                         </div>
                         <div class="desc">为什么开发这个项目？ 什么启发我们采取行动来做这个项目？我们认为，言论自由，信息获取和隐私是在互联网和现实生活中应该受到尊重的基本人权..</div>
@@ -378,9 +384,9 @@
                             <div class="title">项目进度</div>
                             <div>
                                 <div class="bar">
-                                    <span class="inner" style="width: 50%;"></span>
+                                    <span class="inner" style="width: 100%;"></span>
                                 </div>
-                                <div class="percent">54.45%</div>
+                                <div class="percent">100%</div>
                             </div>
                         </div>
                         <div class="info">
@@ -389,7 +395,7 @@
                                 <span class="label">目标金额</span>
                             </div>
                             <div class="item">
-                                <span class="val">23</span>
+                                <span class="val">0</span>
                                 <span class="label">剩余天数</span>
                             </div>
                         </div>
