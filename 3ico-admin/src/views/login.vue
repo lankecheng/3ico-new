@@ -143,7 +143,9 @@ export default{
                             this.$router.push({
                                 path: '/admin'
                             });
-                            location.reload();
+                            setTimeout(() => {
+                                location.reload();
+                            }, 300);
                         }
                     }).catch(() => {
                         this.refreshCaptcha();
