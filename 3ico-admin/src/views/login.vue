@@ -145,7 +145,7 @@ export default{
                             });
                             setTimeout(() => {
                                 location.reload();
-                            }, 300);
+                            }, 1000);
                         }
                     }).catch(() => {
                         this.refreshCaptcha();
