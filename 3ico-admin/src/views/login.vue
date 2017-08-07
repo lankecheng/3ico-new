@@ -4,7 +4,7 @@
     <top/>
     <headerComp/>
 
-    <div class="login-wrap">
+    <div class="login-wrap" @keyup.enter='onSubmit'>
         <div class="View container">
             <div class="login-box">
                 <div class="hd">会员登录</div>
@@ -32,7 +32,7 @@
                         </el-form-item>
                         <el-form-item>
                             <el-button style="width: 100%; background-color: #005bac; border-color: #005bac;"
-                            @click="onSubmit" type="primary">登录</el-button>
+                            @click="onSubmit"  type="primary">登录</el-button>
                             <div style="margin-top: 20px;">
                                 <el-button  style="width: 100%; background-color: #22a875; border-color: #22a875; color: #fff;"
                                 @click="$router.push({
