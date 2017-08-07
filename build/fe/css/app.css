@@ -416,7 +416,7 @@ a {
 .View.container {
   position: relative;
   margin: 0 auto;
-  width: 1000px; }
+  width: 1063px; }
   .View.container:before, .View.container:after {
     content: "";
     display: table; }
@@ -1207,7 +1207,7 @@ a {
 
 .project .left {
   float: left;
-  width: 670px;
+  width: 763px;
   min-height: 600px; }
   .project .left img {
     max-width: 100%; }
