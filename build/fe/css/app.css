@@ -1287,6 +1287,7 @@ a {
           font-size: 14px;
           line-height: 1.5; }
       .project .right .mod.info .control input {
+        font-size: 14px;
         width: 120px;
         height: 48px;
         border: 1px solid #ddd;
