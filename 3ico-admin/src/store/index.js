@@ -1,3 +1,4 @@
+import Promise from 'es6-promise/auto';
 import Vue from 'vue';
 import Vuex from 'vuex';
 

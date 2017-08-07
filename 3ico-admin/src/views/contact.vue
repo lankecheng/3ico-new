@@ -42,7 +42,7 @@
                 </div>
                 <div class="item">
                     <span class="label">联系地址</span>
-                    <div class="content">深圳市南山区大学城创客小镇</div>
+                    <div class="content">深圳市南山区大学城</div>
                 </div>
             </div>
         </div>

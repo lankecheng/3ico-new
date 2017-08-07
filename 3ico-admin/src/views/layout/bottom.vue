@@ -46,7 +46,7 @@
                         </li> -->
                         <li>
                             <i class="ico location"></i>
-                            深圳市南山区大学城创客小镇
+                            深圳市南山区大学城
                         </li>
                     </ul>
                 </div>
