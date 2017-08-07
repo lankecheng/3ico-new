@@ -37,6 +37,8 @@
     "webpack-dev-server": "^2.5.0"
   },
   "dependencies": {
-    "element-ui": "^1.4.0"
+    "element-ui": "^1.4.0",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.3.0"
   }
 }

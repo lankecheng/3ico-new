@@ -1,0 +1,15 @@
+'use strict';
+var gulp		= require('gulp');
+var imagemin    = require('gulp-imagemin');
+gulp.task('images', function(project, type){
+    gulp.src('./*.{jpg,png,gif,swf}')
+        .pipe(imagemin({
+            progressive: true,
+            optimizationLevel: 7
+        }))
+        .pipe(gulp.dest('./images'));
+});
+gulp.task('default', function () {
+    console.log("Wecome to project for Study Report");
+    console.log("You can run gulp watch --project PROJECT_NAME to start project");
+});

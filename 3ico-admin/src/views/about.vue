@@ -54,7 +54,7 @@
         </div>
 
         <div class="group1">
-            <div class="View container">
+            <div class="View container bt100">
                 <ul class="bd">
                     <li>
                         <div class="ico group"></div>
@@ -78,42 +78,6 @@
                         </div>
                     </li>
                 </ul>
-            </div>
-        </div>
-
-        <div class="group2">
-            <div class="View container">
-                <div class="hd">我们的团队</div>
-                <div class="bd">
-                    <div class="item">
-                        <img class="avatar" src="../assets/img/demo/ceo1.jpg">
-                        <!-- <div class="name">张立成 <span class="title">- CEO</span></div>
-                        <div class="desc">
-                            互联网金融创业者， 拥有6 年以上的金融产品设计与运营，以及团队管理经验，熟悉互联网金融的各种运作模式，进入数字货币行业三年多，对区块链有比较深的理解，较强的市场敏锐感，坚持产品设计必须与市场需求相结合
-                        </div> -->
-                    </div>
-                    <div class="item">
-                        <img class="avatar" src="../assets/img/demo/ceo2.jpg">
-                        <!-- <div class="name">张立成 <span class="title">- CEO</span></div>
-                        <div class="desc">
-                            互联网金融创业者， 拥有6 年以上的金融产品设计与运营，以及团队管理经验，熟悉互联网金融的各种运作模式，进入数字货币行业三年多，对区块链有比较深的理解，较强的市场敏锐感，坚持产品设计必须与市场需求相结合
-                        </div> -->
-                    </div>
-                    <div class="item">
-                        <img class="avatar" src="../assets/img/demo/ceo3.jpg">
-                        <!-- <div class="name">张立成 <span class="title">- CEO</span></div>
-                        <div class="desc">
-                            互联网金融创业者， 拥有6 年以上的金融产品设计与运营，以及团队管理经验，熟悉互联网金融的各种运作模式，进入数字货币行业三年多，对区块链有比较深的理解，较强的市场敏锐感，坚持产品设计必须与市场需求相结合
-                        </div> -->
-                    </div>
-                    <div class="item">
-                        <img class="avatar" src="../assets/img/demo/ceo4.jpg">
-                        <!-- <div class="name">张立成 <span class="title">- CEO</span></div>
-                        <div class="desc">
-                            互联网金融创业者， 拥有6 年以上的金融产品设计与运营，以及团队管理经验，熟悉互联网金融的各种运作模式，进入数字货币行业三年多，对区块链有比较深的理解，较强的市场敏锐感，坚持产品设计必须与市场需求相结合
-                        </div> -->
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -305,5 +269,8 @@ export default{
             }
         }
     }
+}
+.bt100{
+    margin-bottom:100px;
 }
 </style>
